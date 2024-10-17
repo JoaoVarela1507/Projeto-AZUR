@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Input from './Input'; 
 import './Form.css';
+import logo from '../../assets/cadastro.png'
+
 
 
 function Form() {
@@ -13,7 +15,7 @@ function Form() {
   return (
     <div className="form-wrapper">
       <div className="form-image">
-      <img src="./cadastro.png" alt="fundocadastro" />
+      <img src={logo}/>
       </div>
 
       <div className="form-container">
