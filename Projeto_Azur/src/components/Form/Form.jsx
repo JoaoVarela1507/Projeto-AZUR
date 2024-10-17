@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Input from './Input'; // Importando o componente de Input
+import Input from './Input'; 
 import './Form.css';
 
 
@@ -13,13 +13,13 @@ function Form() {
   return (
     <div className="form-wrapper">
       <div className="form-image">
-      <img src="/assets/cadastro.svg" alt="fundocadastro" />
+      <img src="./cadastro.png" alt="fundocadastro" />
       </div>
 
       <div className="form-container">
         <div className="form-header">
           <h1>Cadastro</h1>
-          <p>Vamos preparar sua conta para você começar a usar!</p>
+          <p className='msgHeader'>Vamos preparar sua conta para você começar a usar!</p>
         </div>
 
         <div className="form-toggle">
@@ -56,7 +56,7 @@ function Form() {
         </form>
 
         <div className="form-footer">
-          <p>Já tem uma conta? <a href="/login">Faça seu Login</a></p>
+          <p>Já tem uma conta? Faça seu <a href="/login">Login</a></p>
         </div>
       </div>
     </div>
