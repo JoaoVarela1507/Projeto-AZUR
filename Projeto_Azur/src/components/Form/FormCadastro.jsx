@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Input from './Input'; 
-import './Form.css';
+import './FormCadastro.css';
+import logo from '../../assets/cadastro.png'
 
 
-function Form() {
+
+function FormCadastro() {
   const [isPessoaFisica, setIsPessoaFisica] = useState(true);
 
   const handlePessoaChange = (event) => {
@@ -13,7 +15,7 @@ function Form() {
   return (
     <div className="form-wrapper">
       <div className="form-image">
-      <img src="./cadastro.png" alt="fundocadastro" />
+      <img src={logo}/>
       </div>
 
       <div className="form-container">
@@ -63,4 +65,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default FormCadastro;
